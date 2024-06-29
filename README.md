@@ -1,5 +1,5 @@
 # React Todo List App
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Reactjs TodoList App
 
 ## Prerequisites
 Before running this project, make sure you have the following installed on your machine:
