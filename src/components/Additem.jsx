@@ -8,7 +8,7 @@ function Additem({ newItem, setNewItem, handleSubmit }) {
         className="px-4 pl-5 py-3 flex items-center justify-center gap-4 w-full max-w-[700px] mt-20 bg-[#121212] rounded-lg"
       >
         <input
-          className="outline-none  rounded-lg w-full"
+          className="outline-none rounded-lg w-full"
           type="text"
           id="addItem"
           placeholder="Enter item"
@@ -16,7 +16,7 @@ function Additem({ newItem, setNewItem, handleSubmit }) {
           value={newItem}
           onChange={(e) => setNewItem(e.target.value)}
         />
-        <button className=" hover:text-theme-bg" type="submit">
+        <button className=" hover:text-theme-bg transition-all" type="submit">
           <IoAddCircle size={36} />
         </button>
       </form>

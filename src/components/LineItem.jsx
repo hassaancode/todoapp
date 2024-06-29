@@ -1,6 +1,6 @@
 import React from "react";
 import { FaRegTrashCan } from "react-icons/fa6";
-function LineItem({item, handleCheck, handleDelete }) {
+function LineItem({ item, handleCheck, handleDelete }) {
   return (
     <li
       key={item.id}
@@ -13,11 +13,13 @@ function LineItem({item, handleCheck, handleDelete }) {
           onChange={() => handleCheck(item.id)}
           className="mr-4 w-5 h-5 cursor-pointer accent-theme-bg "
         />
-        <label className={`${item.checked ? "line-through" : ""}`}>
+        <label
+          className={`${item.checked ? "line-through text-neutral-400" : ""}`}
+        >
           {item.item}
         </label>
       </div>
-      <button className=" hover:text-theme-bg2">
+      <button className=" hover:text-theme-bg2 transition-all">
         <FaRegTrashCan
           onClick={() => handleDelete(item.id)}
           role="button"
