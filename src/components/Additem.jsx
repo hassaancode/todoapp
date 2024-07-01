@@ -2,7 +2,7 @@ import React from "react";
 import { IoAddCircle } from "react-icons/io5";
 function Additem({ newItem, setNewItem, handleSubmit }) {
   return (
-    <div className="flex items-center justify-center px-2 animate-[frombottom_500ms]">
+    <div className="flex items-center justify-center px-2 animate-[frombottom_600ms]">
       <form
         onSubmit={handleSubmit}
         className="px-4 pl-5 py-3 flex items-center justify-center gap-4 w-full max-w-[700px] mt-20 bg-[#121212] rounded-lg"
