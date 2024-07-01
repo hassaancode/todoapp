@@ -8,7 +8,7 @@ function Additem({ newItem, setNewItem, handleSubmit }) {
         className="px-4 pl-5 py-3 flex items-center justify-center gap-4 w-full max-w-[700px] mt-20 bg-[#121212] rounded-lg"
       >
         <input
-          className="outline-none rounded-lg w-full"
+          className="outline-none rounded-lg w-full autofill:shadow-[inset_0_0_0px_1000px_#121212]"
           type="text"
           id="addItem"
           placeholder="Enter item"

@@ -6,7 +6,7 @@ function LineItem({ item, handleCheck, handleDelete }) {
       key={item.id}
       className="flex items-center justify-between border-b border-white border-opacity-15 p-3 hover:bg-black hover:bg-opacity-10   transition-colors"
     >
-      <div className="flex item-center">
+      <div className="flex items-center">
         <input
           type="checkbox"
           checked={item.checked}

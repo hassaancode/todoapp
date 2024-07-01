@@ -43,19 +43,21 @@ function App() {
 
   return (
     <>
-      <div>
-        <Header title={"Todolist"} />
-        <Additem
-          newItem={newItem}
-          setNewItem={setNewItem}
-          handleSubmit={handleSubmit}
-        />
-        <Content
-          items={items}
-          handleCheck={handleCheck}
-          handleDelete={handleDelete}
-          itemsLength={items.length}
-        />
+      <div className="flex flex-col min-h-screen">
+        <main className="flex-grow">
+          <Header title={"Todolist"} />
+          <Additem
+            newItem={newItem}
+            setNewItem={setNewItem}
+            handleSubmit={handleSubmit}
+          />
+          <Content
+            items={items}
+            handleCheck={handleCheck}
+            handleDelete={handleDelete}
+            itemsLength={items.length}
+          />
+        </main>
         <Footer />
       </div>
     </>
