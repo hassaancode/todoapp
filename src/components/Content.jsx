@@ -11,10 +11,10 @@ const Content = ({ items, handleCheck, handleDelete, itemsLength }) => {
           handleDelete={handleDelete}
         />
       ) : (
-        <p> Your list is Empty</p>
+        <p className="animate-[frombottom_500ms]"> Your list is Empty</p>
       )}
 
-      <p className="text-white text-opacity-35 ">
+      <p className="text-white text-opacity-35 animate-[frombottom_300ms]">
         {itemsLength === 0
           ? "Please add item"
           : `${itemsLength} List ${itemsLength === 1 ? "item" : "items"}`}
