@@ -11,8 +11,7 @@ const Content = ({ items, handleCheck, handleDelete, itemsLength }) => {
           handleDelete={handleDelete}
         />
       ) : (
-          <p className="animate-[frombottom_500ms]"> Your list is Empty</p>
-          
+        <p className="animate-[frombottom_500ms]"> Your list is Empty</p>
       )}
 
       <p
@@ -20,11 +19,9 @@ const Content = ({ items, handleCheck, handleDelete, itemsLength }) => {
           itemsLength === 0 ? "" : "bg-neutral-800"
         }`}
       >
-        {itemsLength === 0 ? (
-          "Please add item"
-        ) : (
-          ` ${itemsLength} ${itemsLength === 1 ? "item" : "items"}`
-        )}
+        {itemsLength === 0
+          ? "Please add tasks"
+          : ` ${itemsLength} ${itemsLength === 1 ? "Task" : "Tasks"}`}
       </p>
     </div>
   );

@@ -11,7 +11,7 @@ function Additem({ newItem, setNewItem, handleSubmit }) {
           className="bg-[#121212] outline-none  w-full autofill:shadow-[inset_0_0_0px_1000px_#121212]"
           type="text"
           id="addItem"
-          placeholder="Enter item"
+          placeholder="Add task"
           required
           value={newItem}
           onChange={(e) => setNewItem(e.target.value)}
