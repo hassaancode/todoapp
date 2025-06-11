@@ -3,7 +3,11 @@ import ItemList from "./ItemList";
 
 const Content = ({ items, handleCheck, handleDelete, itemsLength }) => {
   return (
-    <div className={`flex flex-col gap-2 items-center justify-center mt-5 ${itemsLength === 0 ? "h-[50vh]" : ""}` }>
+    <div
+      className={`flex flex-col gap-2 items-center justify-center mt-5 ${
+        itemsLength === 0 ? "h-[50vh]" : "gap-4"
+      }`}
+    >
       {items.length ? (
         <ItemList
           items={items}
